@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kishore.activitynavigator.MainActivity">
+
+
+    <Button
+        android:text="Greet User "
+        android:onClick="switchToGreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/btnGreet" />
+
+    <Button
+        android:text="Simple Calculator"
+        android:onClick="switchToSimpleCalci"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnGreet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:id="@+id/btnSimpleCalci" />
+
+    <Button
+        android:text="Messaging Service"
+        android:onClick="switchToSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:id="@+id/btnSMS"
+        android:layout_below="@+id/btnAlgoBenchmark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Algorithm Benchmarking"
+        android:onClick="switchToAlgoBenchmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:id="@+id/btnAlgoBenchmark"
+        android:layout_below="@+id/btnSimpleCalci"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Toast Play"
+        android:onClick="switchToToast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/btnToast"
+        android:layout_below="@+id/btnSMS"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        android:text="WIFI Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnToast"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginTop="23dp"
+        android:id="@+id/tbWIFI" />
+
+    <TextView
+        android:text="WIFI Button"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWIFI"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_alignBaseline="@+id/tbWIFI"
+        android:layout_alignBottom="@+id/tbWIFI"
+        android:layout_toLeftOf="@+id/tbWIFI"
+        android:layout_toStartOf="@+id/tbWIFI"
+        android:textColor="@color/colorPrimaryDark" />
+
+
+</RelativeLayout>
